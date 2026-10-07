@@ -1,0 +1,121 @@
+body{
+    font-family: Arial;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    color: #111111;
+    width: 800px;
+    padding: 20px;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+h3{
+    color: gray;
+    font-weight: normal;
+}
+
+button{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background: orange;
+    width: 60%;
+    margin: 40 auto;
+}
+
+.TodoApp, .ExpenseTrackerApp, .NewsApp{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 5px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.ExpenseTrackerApp{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 5px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.NewsApp{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 5px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.TodoApp a{
+    margin-bottom: 8px;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ExpenseTrackerApp a{
+    margin-bottom: 8px;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NewsApp a{
+    margin-bottom: 8px;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.TodoApp h5{
+    color: #666666;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.ExpenseTrackerApp h5{
+    color: #666666;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.NewsApp h5{
+    color: #666666;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+h6{
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+a{
+    color: orange;
+}
