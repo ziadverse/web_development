@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- Welcome Card -->
+        <div class="welcome-card card">
+            <h1>Welcome</h1>
+
+            <form id="welcome-form" class="input-row">
+                <input
+                    id="welcome-name"
+                    type="text"
+                    placeholder="Your name"
+                >
+                <button type="submit">ADD</button>
+            </form>
+        </div>
+
+        <!-- Hello and Goodbye Cards -->
+        <div class="cards-row">
+
+            <!-- Hello Card -->
+            <div class="name-card card">
+                <h2 id="hello-title">Hello!</h2>
+
+                <form id="hello-form" class="input-row">
+                    <input
+                        id="hello-name"
+                        type="text"
+                        placeholder="Your name"
+                    >
+                    <button type="submit">Hello</button>
+                </form>
+
+                <ul id="hello-list" class="name-list"></ul>
+            </div>
+
+            <!-- Goodbye Card -->
+            <div class="name-card card">
+                <h2 id="goodbye-title">Goodbye!</h2>
+
+                <form id="goodbye-form" class="input-row">
+                    <input
+                        id="goodbye-name"
+                        type="text"
+                        placeholder="Your name"
+                        autocomplete="off"
+                    >
+                    <button type="submit">Remove</button>
+                </form>
+                <ul id="goodbye-list" class="name-list"></ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
