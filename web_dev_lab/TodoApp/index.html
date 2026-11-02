@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>To-Do List</title>
-        <link rel="stylesheet", href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="todo-app">
-                <h2>To-Do List <img src="images/icon.png"></h2>
-                <div class = "row"> 
-                    <input type="text" id="input-box" placeholder="Add Todo">
-                    <button onclick="addTodo()">Add Todo</button>
-                </div>
-                <ul id="list-container">
-                    <!-- <li class="checked">Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li> -->
-                </ul>
-            </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>Todo App</h2>
+
+      <form class="row" id="todo-form" autocomplete="off" novalidate>
+        <input type="text" id="input-box" placeholder="What needs doing?" aria-label="New todo" />
+        <button type="submit" class="add-btn">Add</button>
+      </form>
+
+      <div class="toolbar">
+        <p class="tip">Tip: double-click a todo to edit. Press Enter to save.</p>
+        <div class="filters" role="group" aria-label="Filter todos">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" class="filter" data-filter="completed" aria-pressed="false">Completed</button>
         </div>
-        <script src="script.js"></script>
-    </body>    
+      </div>
+
+      <ul id="list-container"></ul>
+
+      <div class="footer">
+        <span id="count" aria-live="polite">0 items left</span>
+        <div class="actions">
+          <button type="button" id="clear-completed">Clear completed</button>
+          <button type="button" id="clear-all">Clear all</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
